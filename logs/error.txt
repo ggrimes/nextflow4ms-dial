@@ -1,0 +1,37 @@
+Error executing process > 'peak_detection_msdial (1)'
+
+Caused by:
+  Process `peak_detection_msdial (1)` terminated with an error exit status (137)
+
+Command executed:
+
+  echo "peak detection via MS-DIAL software" &&
+  mkdir "ms-dial" && mv msdial_params.txt "ms-dial" && mv ms1_lib.txt "ms-dial" && mv MSMS-Pos-MassBank.msp "ms-dial" && mv SA1.abf "ms-dial" && mv raw_data "ms-dial" && cd "ms-dial" && MsdialConsoleApp lcmsdda -i raw_data -o ./ -m msdial_params.txt
+
+Command exit status:
+  137
+
+Command output:
+  peak detection via MS-DIAL software
+  Loading library files..
+  Start processing..
+  raw_data/SA1.abf
+  Reading data...
+  end peak picking
+  Exporting deconvolution results...
+  Reading data...
+  Exporting peak list data: ./SA1.msdial
+  
+  Deconvoluted peak count: 46796
+  
+  raw_data/SA1.abf finished
+  raw_data/SA2.abf
+  Reading data...
+
+Command error:
+  .command.sh: line 3:    51 Killed                  MsdialConsoleApp lcmsdda -i raw_data -o ./ -m msdial_params.txt
+
+Work dir:
+  /Users/xinsongdu/mnt/projects/nextflow4ms-dial/work/eb/3a34a7f3c199cb69e167d271a0df30
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`

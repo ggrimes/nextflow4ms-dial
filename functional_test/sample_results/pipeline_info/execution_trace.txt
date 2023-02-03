@@ -1,0 +1,4 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+2	9f/832a9b	71970	msflo_download	COMPLETED	0	2022-10-22 21:14:41.474	3.2s	2s	11.9%	11.5 MB	24 MB	2.3 MB	5.2 MB
+1	d1/0dd9d5	71980	peak_detection_msdial (1)	COMPLETED	0	2022-10-22 21:14:41.497	2m 10s	2m 9s	83.4%	257.8 MB	3.1 GB	2.9 GB	108.7 MB
+3	a9/c47146	72077	msflo_processing (1)	COMPLETED	0	2022-10-22 21:16:51.386	1m 52s	1m 51s	98.5%	121.8 MB	498.8 MB	26.9 MB	3.3 MB

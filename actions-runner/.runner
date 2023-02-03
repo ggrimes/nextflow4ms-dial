@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "nextflow4ms-dial-mac",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/ITvGSOqEuAj2I9OdBMLsSJTB2KHSpjcukqyC12fmW31VCgKrr9",
+  "gitHubUrl": "https://github.com/Nextflow4Metabolomics/nextflow4ms-dial",
+  "workFolder": "_work"
+}
