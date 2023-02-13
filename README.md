@@ -32,8 +32,21 @@ The workflow support MacOS and Linux operating systems.
     nextflow main.nf -profile functional_test > logs/execution.log
     ```
 
-## Configuration
+## Process Your Own Data
 
+1. Download the pipeline repo and dirct to the folder:
+	```bash
+	git clone https://github.com/Nextflow4Metabolomics/nextflow4ms-dial.git && cd nextflow4ms-dial
+	```
+2. Put the raw data files in `.mzML` or `.abf` format in the folder `data/raw_data/`. `.mzML` format files can be converted from other formats using the software (ProteoWizard-msConvert)[https://proteowizard.sourceforge.io/download.html], and `.abf` format files can be obtained via using the software (Reifycs Abf Converter)[https://www.reifycs.com/AbfConverter/].
+3. Put config files for MS-DIAL and MS-FLO to the `data/` folder, and name them `msdial_params.txt` and `msflo_params.ini` separately. Example files can be found in `functional_test/sample_data/`.
+4. Put MS1 library and MS2 library to the `data/` folder, and name them `ms1_lib.txt` and `ms2_lib.msp`. Example files can be found in `functional_test/sample_data/`.
+3. Run the pipeline (use "docker" as the profile when running locally, and "singularity" as the profile when running with a high-performance computing system):
+    ```bash
+    nextflow main.nf -profile docker > logs/execution.log
+    ```
+
+## Configuration
 
 - Before running for your own data files, make sure the reference file in `conf/base.config` and the MS-DIAL config file are set correctly.
 - Configuration for running with Docker are set in the file `conf/base.config`.
