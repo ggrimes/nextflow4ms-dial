@@ -7,6 +7,7 @@ results/
 work/
 .nextflow*
 logs/*
+nbs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
