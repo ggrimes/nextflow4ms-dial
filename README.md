@@ -3,7 +3,7 @@
 **Nextflow pipeline for reproducible metabolomics data processing with MS-DIAL**.
 
 [![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A520.04.0-brightgreen.svg)](https://www.nextflow.io/)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e70a66767f74537a5f8b0999b9e9030)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nextflow4Metabolomics/nextflow4ms-dial&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/104f754fa0854cc49e7f84ce73b7c440)](https://app.codacy.com/gh/Nextflow4Metabolomics/nextflow4ms-dial/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## Introduction
 
@@ -18,7 +18,7 @@ The workflow support MacOS and Linux operating systems.
 
 1. Install [`nextflow`](https://nf-co.re/usage/installation)
 
-2. Install any of [`Docker`](https://docs.docker.com/engine/installation/), [`Singularity`](https://www.sylabs.io/guides/3.0/user-guide/) or [`Podman`](https://podman.io/) for full pipeline reproducibility _(please only use [`Conda`](https://conda.io/miniconda.html) as a last resort; see [docs](https://nf-co.re/usage/configuration#basic-configuration-profiles))_
+2. Install any of [`Docker`](https://docs.docker.com/engine/installation/), [`Singularity`](https://www.sylabs.io/guides/3.0/user-guide/)
 
 ## Quick Start
 
