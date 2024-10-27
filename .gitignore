@@ -1,7 +1,13 @@
 *.DS_Store
 manuscript/
-#data/
+data/
 databases/
+ms-flo/
+results/
+work/
+.nextflow*
+logs/*
+nbs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
