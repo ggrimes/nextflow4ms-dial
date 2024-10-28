@@ -73,14 +73,6 @@ The workflow support MacOS and Linux operating systems. Notably, the workflow ha
 2. I allocated 20 CPUs for running the pipeline using Slurm, why I got an error like `Process requirement exceed available CPUs -- req: 5; avail: 3`
 	- Make sure to use `--max_cpus` instead of `--cpus` in the config file to define the allocated CPUs for each process.
 
-## Forum
-
-Please put discussions on our [GitHub Discussions](https://github.com/Nextflow4Metabolomics/nextflow4ms-dial/discussions)
-
-## Documentation
-
-The nf-core/nfmsdial pipeline comes with documentation about the pipeline: [usage](https://nf-co.re/nfmsdial/usage) and [output](https://nf-co.re/nfmsdial/output).
-
 ## Credits
 
 Dr. Dominick Lemas (Xinsong Du's Ph.D. advisor) and Xinsong Du play an important role on conceptulization.
