@@ -34,6 +34,11 @@ The workflow support MacOS and Linux operating systems. Notably, the workflow ha
     nextflow main.nf -profile functional_test > logs/execution.log
     ```
 
+## Example data and Results
+
+- Example data: https://drive.google.com/drive/folders/1atsy-TlfJSs0sw2ZCvbkqOSAbZFYRqdy, which is the publicly available data from the publication “Li, Z., Lu, Y., Guo, Y., Cao, H., Wang, Q., & Shui, W. (2018). Comprehensive evaluation of untargeted metabolomics data processing software in feature detection, quantification, and discriminating marker selection. Analytica Chimica Acta, 1029, 50–57”. The data has ten samples in total and five samples in each of the two groups. The protocol regarding processing this data is also publicly available at MetaboLights MTBLS733 (https://www.ebi.ac.uk/metabolights/editor/MTBLS733/protocols).
+- Example results are stored in the "results" folder. Note that the file extensions of all produced ".msdial" files have been changed to ".csv".
+
 ## Process Your Own Data
 
 1. Download the pipeline repo and dirct to the folder:
