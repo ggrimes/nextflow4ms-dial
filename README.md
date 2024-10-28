@@ -12,13 +12,15 @@
 
 The pipeline is built using [Nextflow](https://www.nextflow.io), a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It comes with docker containers making installation trivial and results highly reproducible.
 
-The workflow support MacOS and Linux operating systems.
+The workflow support MacOS and Linux operating systems. Notably, the workflow has been tested successfully on: 1) A MacOS system (version 13.5.1) including a 2.6 GHz 6-Core Intel Core i7 Processor and 16GB memory; 2) A Linux system installed in a public server named HiPerGator (https://www.rc.ufl.edu/about/hipergator/) whose system version was Red Hat Enterprise 8.8.
 
 ## Installation
 
-1. Install [`nextflow`](https://nf-co.re/usage/installation)
+1. Install Java version 11+ (the author used 11.0.8).
 
-2. Install any of [`Docker`](https://docs.docker.com/engine/installation/), [`Singularity`](https://www.sylabs.io/guides/3.0/user-guide/)
+2. Install [`nextflow`](https://nf-co.re/usage/installation)
+
+3. Install [`Docker`](https://docs.docker.com/engine/installation/) or [`Singularity`](https://www.sylabs.io/guides/3.0/user-guide/)
 
 ## Quick Start
 
