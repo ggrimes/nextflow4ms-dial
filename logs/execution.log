@@ -1,0 +1,883 @@
+N E X T F L O W  ~  version 22.04.5
+Launching `main.nf` [spontaneous_saha] DSL1 - revision: 8baf814077
+Project : /Users/xinsongdu/mnt/projects/nextflow4ms-dial
+Git info: null - null [null]
+Cmd line: nextflow main.nf -profile docker
+Manifest's pipeline version: 1.0dev
+Pipeline Name     : RUMP
+Run Name          : A Nextflow-based reproducible pipeline for untargeted metabolomics data analysis
+Input             : mzML files
+Max Resources     : 9 GB memory, 5 cpus, 1d time per job
+Container         : docker - xinsongdu/metabolomics_software_containerization:v2
+Output dir        : ./results
+Launch dir        : /Users/xinsongdu/mnt/projects/nextflow4ms-dial
+Working dir       : /Users/xinsongdu/mnt/projects/nextflow4ms-dial/work
+Script dir        : /Users/xinsongdu/mnt/projects/nextflow4ms-dial
+User              : xinsongdu
+Config Profile    : docker
+Config Files      : /Users/xinsongdu/mnt/projects/nextflow4ms-dial/nextflow.config
+----------------------------------------------------
+WARN: The `echo` directive has been deprecated - use to `debug` instead
+WARN: Unknown directive `max_cpus` for process `peak_detection_msdial`
+WARN: Unknown directive `max_memory` for process `peak_detection_msdial`
+[-        ] process > peak_detection_msdial [  0%] 0 of 1
+[-        ] process > msflo_download        [  0%] 0 of 1
+[-        ] process > msflo_processing      -
+WARN: Unknown directive `max_cpus` for process `msflo_download`
+WARN: Unknown directive `max_memory` for process `msflo_download`
+WARN: Unknown directive `max_cpus` for process `msflo_processing`
+WARN: Unknown directive `max_memory` for process `msflo_processing`
+
+executor >  local (2)
+[08/8132bb] process > peak_detection_msdial (1) [  0%] 0 of 1
+[04/64d2ca] process > msflo_download            [  0%] 0 of 1
+[-        ] process > msflo_processing          -
+WARN: Unknown directive `max_cpus` for process `msflo_download`
+WARN: Unknown directive `max_memory` for process `msflo_download`
+WARN: Unknown directive `max_cpus` for process `msflo_processing`
+WARN: Unknown directive `max_memory` for process `msflo_processing`
+
+executor >  local (2)
+[08/8132bb] process > peak_detection_msdial (1) [  0%] 0 of 1
+[04/64d2ca] process > msflo_download            [100%] 1 of 1 ✔
+[-        ] process > msflo_processing          -
+WARN: Unknown directive `max_cpus` for process `msflo_download`
+WARN: Unknown directive `max_memory` for process `msflo_download`
+WARN: Unknown directive `max_cpus` for process `msflo_processing`
+WARN: Unknown directive `max_memory` for process `msflo_processing`
+
+executor >  local (2)
+[08/8132bb] process > peak_detection_msdial (1) [  0%] 0 of 1
+[04/64d2ca] process > msflo_download            [100%] 1 of 1 ✔
+[-        ] process > msflo_processing          -
+peak detection via MS-DIAL software
+Loading library files..
+Start processing..
+raw_data/SA1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA1.msdial
+
+Deconvoluted peak count: 46796
+
+raw_data/SA1.abf finished
+raw_data/SA2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA2.msdial
+
+Deconvoluted peak count: 44979
+
+raw_data/SA2.abf finished
+raw_data/SA3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA3.msdial
+
+Deconvoluted peak count: 45778
+
+raw_data/SA3.abf finished
+raw_data/SA4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA4.msdial
+
+Deconvoluted peak count: 45863
+
+raw_data/SA4.abf finished
+raw_data/SA5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA5.msdial
+
+Deconvoluted peak count: 46125
+
+raw_data/SA5.abf finished
+raw_data/SB1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB1.msdial
+
+Deconvoluted peak count: 45728
+
+raw_data/SB1.abf finished
+raw_data/SB2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB2.msdial
+
+Deconvoluted peak count: 45052
+
+raw_data/SB2.abf finished
+raw_data/SB3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB3.msdial
+
+Deconvoluted peak count: 45328
+
+raw_data/SB3.abf finished
+raw_data/SB4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB4.msdial
+
+Deconvoluted peak count: 45626
+
+raw_data/SB4.abf finished
+raw_data/SB5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB5.msdial
+
+Deconvoluted peak count: 45969
+
+raw_data/SB5.abf finished
+Joint aligner finished
+Reading data...
+0 finished
+Reading data...
+1 finished
+Reading data...
+2 finished
+Reading data...
+3 finished
+Reading data...
+4 finished
+Reading data...
+5 finished
+Reading data...
+6 finished
+Reading data...
+7 finished
+Reading data...
+8 finished
+Reading data...
+9 finished
+Start finalization
+End finalization
+Start aligned eic
+End aligned eic
+Gap filling finished
+Finalization finished
+
+
+
+
+
+
+executor >  local (2)
+[08/8132bb] process > peak_detection_msdial (1) [100%] 1 of 1 ✔
+[04/64d2ca] process > msflo_download            [100%] 1 of 1 ✔
+[-        ] process > msflo_processing          -
+peak detection via MS-DIAL software
+Loading library files..
+Start processing..
+raw_data/SA1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA1.msdial
+
+Deconvoluted peak count: 46796
+
+raw_data/SA1.abf finished
+raw_data/SA2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA2.msdial
+
+Deconvoluted peak count: 44979
+
+raw_data/SA2.abf finished
+raw_data/SA3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA3.msdial
+
+Deconvoluted peak count: 45778
+
+raw_data/SA3.abf finished
+raw_data/SA4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA4.msdial
+
+Deconvoluted peak count: 45863
+
+raw_data/SA4.abf finished
+raw_data/SA5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA5.msdial
+
+Deconvoluted peak count: 46125
+
+raw_data/SA5.abf finished
+raw_data/SB1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB1.msdial
+
+Deconvoluted peak count: 45728
+
+raw_data/SB1.abf finished
+raw_data/SB2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB2.msdial
+
+Deconvoluted peak count: 45052
+
+raw_data/SB2.abf finished
+raw_data/SB3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB3.msdial
+
+Deconvoluted peak count: 45328
+
+raw_data/SB3.abf finished
+raw_data/SB4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB4.msdial
+
+Deconvoluted peak count: 45626
+
+raw_data/SB4.abf finished
+raw_data/SB5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB5.msdial
+
+Deconvoluted peak count: 45969
+
+raw_data/SB5.abf finished
+Joint aligner finished
+Reading data...
+0 finished
+Reading data...
+1 finished
+Reading data...
+2 finished
+Reading data...
+3 finished
+Reading data...
+4 finished
+Reading data...
+5 finished
+Reading data...
+6 finished
+Reading data...
+7 finished
+Reading data...
+8 finished
+Reading data...
+9 finished
+Start finalization
+End finalization
+Start aligned eic
+End aligned eic
+Gap filling finished
+Finalization finished
+
+
+
+
+
+
+executor >  local (2)
+[08/8132bb] process > peak_detection_msdial (1) [100%] 1 of 1 ✔
+[04/64d2ca] process > msflo_download            [100%] 1 of 1 ✔
+[-        ] process > msflo_processing          [  0%] 0 of 1
+peak detection via MS-DIAL software
+Loading library files..
+Start processing..
+raw_data/SA1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA1.msdial
+
+Deconvoluted peak count: 46796
+
+raw_data/SA1.abf finished
+raw_data/SA2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA2.msdial
+
+Deconvoluted peak count: 44979
+
+raw_data/SA2.abf finished
+raw_data/SA3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA3.msdial
+
+Deconvoluted peak count: 45778
+
+raw_data/SA3.abf finished
+raw_data/SA4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA4.msdial
+
+Deconvoluted peak count: 45863
+
+raw_data/SA4.abf finished
+raw_data/SA5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA5.msdial
+
+Deconvoluted peak count: 46125
+
+raw_data/SA5.abf finished
+raw_data/SB1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB1.msdial
+
+Deconvoluted peak count: 45728
+
+raw_data/SB1.abf finished
+raw_data/SB2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB2.msdial
+
+Deconvoluted peak count: 45052
+
+raw_data/SB2.abf finished
+raw_data/SB3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB3.msdial
+
+Deconvoluted peak count: 45328
+
+raw_data/SB3.abf finished
+raw_data/SB4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB4.msdial
+
+Deconvoluted peak count: 45626
+
+raw_data/SB4.abf finished
+raw_data/SB5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB5.msdial
+
+Deconvoluted peak count: 45969
+
+raw_data/SB5.abf finished
+Joint aligner finished
+Reading data...
+0 finished
+Reading data...
+1 finished
+Reading data...
+2 finished
+Reading data...
+3 finished
+Reading data...
+4 finished
+Reading data...
+5 finished
+Reading data...
+6 finished
+Reading data...
+7 finished
+Reading data...
+8 finished
+Reading data...
+9 finished
+Start finalization
+End finalization
+Start aligned eic
+End aligned eic
+Gap filling finished
+Finalization finished
+
+
+executor >  local (3)
+[08/8132bb] process > peak_detection_msdial (1) [100%] 1 of 1 ✔
+[04/64d2ca] process > msflo_download            [100%] 1 of 1 ✔
+[23/e80544] process > msflo_processing (1)      [  0%] 0 of 1
+peak detection via MS-DIAL software
+Loading library files..
+Start processing..
+raw_data/SA1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA1.msdial
+
+Deconvoluted peak count: 46796
+
+raw_data/SA1.abf finished
+raw_data/SA2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA2.msdial
+
+Deconvoluted peak count: 44979
+
+raw_data/SA2.abf finished
+raw_data/SA3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA3.msdial
+
+Deconvoluted peak count: 45778
+
+raw_data/SA3.abf finished
+raw_data/SA4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA4.msdial
+
+Deconvoluted peak count: 45863
+
+raw_data/SA4.abf finished
+raw_data/SA5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SA5.msdial
+
+Deconvoluted peak count: 46125
+
+raw_data/SA5.abf finished
+raw_data/SB1.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB1.msdial
+
+Deconvoluted peak count: 45728
+
+raw_data/SB1.abf finished
+raw_data/SB2.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB2.msdial
+
+Deconvoluted peak count: 45052
+
+raw_data/SB2.abf finished
+raw_data/SB3.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB3.msdial
+
+Deconvoluted peak count: 45328
+
+raw_data/SB3.abf finished
+raw_data/SB4.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB4.msdial
+
+Deconvoluted peak count: 45626
+
+raw_data/SB4.abf finished
+raw_data/SB5.abf
+Reading data...
+end peak picking
+Exporting deconvolution results...
+Reading data...
+Exporting peak list data: ./SB5.msdial
+
+Deconvoluted peak count: 45969
+
+raw_data/SB5.abf finished
+Joint aligner finished
+Reading data...
+0 finished
+Reading data...
+1 finished
+Reading data...
+2 finished
+Reading data...
+3 finished
+Reading data...
+4 finished
+Reading data...
+5 finished
+Reading data...
+6 finished
+Reading data...
+7 finished
+Reading data...
+8 finished
+Reading data...
+9 finished
+Start finalization
+End finalization
+Start aligned eic
+End aligned eic
+Gap filling finished
+Finalization finished
+
+
+executor >  local (3)
+[08/8132bb] process > peak_detection_msdial (1) [100%] 1 of 1 ✔
+[04/64d2ca] process > msflo_download            [100%] 1 of 1 ✔
+[23/e80544] process > msflo_processing (1)      [100%] 1 of 1 ✔
+peak detection optimization via MS-FLO software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pipeline complete, writing success report to file ./logs/success_report.txt
+Command line: nextflow main.nf -profile docker
+
+executor >  local (3)
+[08/8132bb] process > peak_detection_msdial (1) [100%] 1 of 1 ✔
+[04/64d2ca] process > msflo_download            [100%] 1 of 1 ✔
+[23/e80544] process > msflo_processing (1)      [100%] 1 of 1 ✔
+peak detection optimization via MS-FLO software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed at: 20-Oct-2024 18:00:41
+Duration    : 4h 46m 53s
+CPU hours   : 4.8
+Succeeded   : 3
+
+
