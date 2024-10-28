@@ -37,6 +37,10 @@ The workflow support MacOS and Linux operating systems. Notably, the workflow ha
 ## Example data and Results
 
 - Example data: https://drive.google.com/drive/folders/1atsy-TlfJSs0sw2ZCvbkqOSAbZFYRqdy, which is the publicly available data from the publication “Li, Z., Lu, Y., Guo, Y., Cao, H., Wang, Q., & Shui, W. (2018). Comprehensive evaluation of untargeted metabolomics data processing software in feature detection, quantification, and discriminating marker selection. Analytica Chimica Acta, 1029, 50–57”. The data has ten samples in total and five samples in each of the two groups. The protocol regarding processing this data is also publicly available at MetaboLights MTBLS733 (https://www.ebi.ac.uk/metabolights/editor/MTBLS733/protocols).
+- Execution command: 
+    ```bash
+    nextflow main.nf -profile docker > logs/execution.log
+    ```
 - Example results are stored in the "results" folder. Note that the file extensions of all produced ".msdial" files have been changed to ".tsv" which enables the files to be opened with Excel software.
 - The execution logs for the example data are stored at "logs" folder.
 
@@ -46,7 +50,7 @@ The workflow support MacOS and Linux operating systems. Notably, the workflow ha
 	```bash
 	git clone https://github.com/Nextflow4Metabolomics/nextflow4ms-dial.git && cd nextflow4ms-dial
 	```
-2. Put the raw data files in `.mzML` or `.abf` format in the folder `data/raw_data/`. `.mzML` format files can be converted from other formats using the software (ProteoWizard-msConvert)[https://proteowizard.sourceforge.io/download.html], and `.abf` format files can be obtained via using the software (Reifycs Abf Converter)[https://www.reifycs.com/AbfConverter/].
+2. Remove example data, put your raw data files in `.mzML` or `.abf` format in the folder `data/raw_data/`. `.mzML` format files can be converted from other formats using the software (ProteoWizard-msConvert)[https://proteowizard.sourceforge.io/download.html], and `.abf` format files can be obtained via using the software (Reifycs Abf Converter)[https://www.reifycs.com/AbfConverter/].
 3. Put config files for MS-DIAL and MS-FLO to the `data/` folder, and name them `msdial_params.txt` and `msflo_params.ini` separately. Example files can be found in `functional_test/sample_data/`.
 4. Put MS1 library and MS2 library to the `data/` folder, and name them `ms1_lib.txt` and `ms2_lib.msp`. Example files can be found in `functional_test/sample_data/`.
 3. Run the pipeline (use "docker" as the profile when running locally, and "singularity" as the profile when running with a high-performance computing system):
