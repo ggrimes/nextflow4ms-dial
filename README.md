@@ -75,11 +75,8 @@ The workflow support MacOS and Linux operating systems. Notably, the workflow ha
 
 ## Credits
 
-Dr. Dominick Lemas (Xinsong Du's Ph.D. advisor) and Xinsong Du play an important role on conceptulization.
+Dr. Dominick Lemas (Dr. Xinsong Du's Ph.D. advisor) and Xinsong Du play an important role on conceptulization.
 The `nextflow4ms-dial` was mainly developed by Xinsong Du. 
-
-We thank the following people for their extensive assistance in the development
-of this pipeline:
 
 ## Semantic Annotations
 
@@ -93,3 +90,9 @@ of this pipeline:
 - `execution_timeline.html` has information about the execution timeline of each process.
 - `logs/execution.log` is an example log file for a successful execution. The log file includes metadata of the execution such as the versions of the dependency (Nextflow) and the workflow, parameter information such as resource allocation and the software container, the workflow execution progress, and the execution log for each process.
 - `error.txt` is an example error log for a failed execution.
+
+## Journal Publication
+
+Please cite the following journal publication if you use Nextflow4MS-DIAL for scientific projects:
+
+- Du X, Dobrowolski A, Brochhausen M, Garrett TJ, Hogan WR, Lemas DJ. Nextflow4MS-DIAL: A Reproducible Nextflow-Based Workflow for Liquid Chromatography-Mass Spectrometry Metabolomics Data Processing. J Am Soc Mass Spectrom. Published online January 5, 2025. doi:10.1021/jasms.4c00364
